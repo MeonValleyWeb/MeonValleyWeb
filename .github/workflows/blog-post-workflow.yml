@@ -27,7 +27,10 @@ jobs:
           (async () => {
             const parser = new Parser();
             const feed = await parser.parseURL('https://fatpasty.com/rss.xml');
-            const posts = feed.items.slice(0, 4);
+            const posts = feed.items
+              .slice()
+              .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+              .slice(0, 4);
             const cell = p => {
               const date = new Date(p.pubDate).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
               const desc = (p.contentSnippet || p.content || '').trim();

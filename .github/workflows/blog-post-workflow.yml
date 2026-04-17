@@ -13,9 +13,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: gautamkrishnar/blog-post-workflow@v1
+
+      - uses: actions/setup-node@v4
         with:
-          feed_list: "https://fatpasty.com/rss.xml"
-          max_post_count: 3
-          template: "<table><tr><td><b><a href=\"$url\">$title</a></b><br><sub>$date</sub><br><br>$description</td></tr></table>"
-          date_format: "mmm d, yyyy"
+          node-version: '20'
+
+      - name: Build 2x2 post grid
+        run: |
+          npm install rss-parser@3
+          node <<'EOF'
+          const fs = require('fs');
+          const Parser = require('rss-parser');
+          (async () => {
+            const parser = new Parser();
+            const feed = await parser.parseURL('https://fatpasty.com/rss.xml');
+            const posts = feed.items.slice(0, 4);
+            const cell = p => {
+              const date = new Date(p.pubDate).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+              const desc = (p.contentSnippet || p.content || '').trim();
+              return `<td valign="top" width="50%"><b><a href="${p.link}">${p.title}</a></b><br><sub>${date}</sub><br><br>${desc}</td>`;
+            };
+            const rows = [];
+            for (let i = 0; i < posts.length; i += 2) {
+              rows.push(`  <tr>\n    ${posts.slice(i, i + 2).map(cell).join('\n    ')}\n  </tr>`);
+            }
+            const grid = `<table>\n${rows.join('\n')}\n</table>`;
+            const readme = fs.readFileSync('README.md', 'utf8');
+            const out = readme.replace(
+              /<!-- BLOG-POST-LIST:START -->[\s\S]*?<!-- BLOG-POST-LIST:END -->/,
+              `<!-- BLOG-POST-LIST:START -->\n${grid}\n<!-- BLOG-POST-LIST:END -->`
+            );
+            fs.writeFileSync('README.md', out);
+          })();
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "blog-post-bot"
+          git config user.email "blog-post-bot@users.noreply.github.com"
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "Updated with the latest blog posts"
+            git push
+          fi

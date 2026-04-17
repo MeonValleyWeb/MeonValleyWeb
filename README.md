@@ -22,7 +22,18 @@
 
 ### Latest writing
 
-<!-- BLOG-POST-LIST:START --><table><tr><td><b><a href="https://fatpasty.com/blog/ai-powered-development-workflows-with-claude-a-practical-guide/">AI-Powered Development Workflows with Claude: A Practical Guide</a></b><br><sub>Apr 16, 2026</sub><br><br>Leveraging Claude AI as a development assistant for code review, architecture decisions, debugging help, and productivity enhancement in daily workflows</td></tr></table><table><tr><td><b><a href="https://fatpasty.com/blog/ddev-for-wordpress-and-php-development-say-goodbye-to-works-on-my-machine/">DDEV for WordPress and PHP Development: Say Goodbye to &quot;Works on My Machine&quot;</a></b><br><sub>Apr 13, 2026</sub><br><br>Setting up reproducible WordPress and PHP development environments with DDEV using pre-configured Docker containers for database, web server, and tools</td></tr></table><table><tr><td><b><a href="https://fatpasty.com/blog/automating-content-creation-with-claude-api-a-practical-guide/">Automating Content Creation with Claude API: A Practical Guide</a></b><br><sub>Apr 9, 2026</sub><br><br>Building automated content pipelines using the Claude API for blog post generation, content summarization, and technical writing assistance</td></tr></table><!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->
+<table>
+  <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/code-sample/">Building a React Hook for API Calls</a></b><br><sub>20 Jan 2024</sub><br><br>A practical example of creating a reusable React hook for handling API calls with loading states and error handling</td>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/using-mdx/">Why I Choose Astro for My Blog</a></b><br><sub>25 Jan 2024</sub><br><br>Exploring the benefits of Astro for content-focused websites and why it is perfect for developers</td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/first-post/">Welcome to fatpasty.com</a></b><br><sub>15 Jan 2025</sub><br><br>The beginning of a new journey in coding, web development, and life experiences</td>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/bun-and-the-evolution-of-javascript-runtimes/">Bun and the Evolution of JavaScript Runtimes</a></b><br><sub>10 Mar 2026</sub><br><br>Bun has reached stable maturity and is challenging Node.js as a JavaScript runtime, bundler, test runner, and package manager all-in-one. Developers are benchmarking Bun against Node.js and Deno, exploring its compatibility with existing npm ecosystems, and evaluating whether it's production-ready for their use cases. The competition is also pushing Node.js to innovate faster with native TypeScript support and improved performance.</td>
+  </tr>
+</table>
+<!-- BLOG-POST-LIST:END -->
 
 <sub>Synced from <a href="https://fatpasty.com">fatpasty.com</a> · updated every 12h</sub>
 

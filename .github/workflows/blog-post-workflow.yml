@@ -12,6 +12,7 @@ jobs:
     name: Update README with latest fatpasty.com posts
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://fatpasty.com/rss.xml"

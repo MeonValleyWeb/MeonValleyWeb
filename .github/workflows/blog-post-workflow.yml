@@ -16,6 +16,6 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://fatpasty.com/rss.xml"
-          max_post_count: 6
+          max_post_count: 3
           template: "<table><tr><td><b><a href=\"$url\">$title</a></b><br><sub>$date</sub><br><br>$description</td></tr></table>"
           date_format: "mmm d, yyyy"

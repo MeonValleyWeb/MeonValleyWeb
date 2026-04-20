@@ -25,12 +25,12 @@
 <!-- BLOG-POST-LIST:START -->
 <table>
   <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/wordpress-as-a-cms-for-astro-js-sites-the-best-of-both-worlds/">WordPress as a CMS for Astro.js Sites: The Best of Both Worlds</a></b><br><sub>20 Apr 2026</sub><br><br>Fetching content from WordPress into Astro static sites using WPGraphQL or REST API for the best of both worlds: familiar CMS and modern frontend</td>
     <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/ai-powered-development-workflows-with-claude-a-practical-guide/">AI-Powered Development Workflows with Claude: A Practical Guide</a></b><br><sub>16 Apr 2026</sub><br><br>Leveraging Claude AI as a development assistant for code review, architecture decisions, debugging help, and productivity enhancement in daily workflows</td>
-    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/ddev-for-wordpress-and-php-development-say-goodbye-to-works-on-my-machine/">DDEV for WordPress and PHP Development: Say Goodbye to "Works on My Machine"</a></b><br><sub>13 Apr 2026</sub><br><br>Setting up reproducible WordPress and PHP development environments with DDEV using pre-configured Docker containers for database, web server, and tools</td>
   </tr>
   <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/ddev-for-wordpress-and-php-development-say-goodbye-to-works-on-my-machine/">DDEV for WordPress and PHP Development: Say Goodbye to "Works on My Machine"</a></b><br><sub>13 Apr 2026</sub><br><br>Setting up reproducible WordPress and PHP development environments with DDEV using pre-configured Docker containers for database, web server, and tools</td>
     <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/automating-content-creation-with-claude-api-a-practical-guide/">Automating Content Creation with Claude API: A Practical Guide</a></b><br><sub>9 Apr 2026</sub><br><br>Building automated content pipelines using the Claude API for blog post generation, content summarization, and technical writing assistance</td>
-    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/wordpress-database-optimization-with-mysql-and-postgresql/">WordPress Database Optimization with MySQL and PostgreSQL</a></b><br><sub>6 Apr 2026</sub><br><br>Database performance tuning for WordPress including query optimization, indexing strategies, and migration considerations between MySQL and PostgreSQL</td>
   </tr>
 </table>
 <!-- BLOG-POST-LIST:END -->

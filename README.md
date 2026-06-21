@@ -25,12 +25,12 @@
 <!-- BLOG-POST-LIST:START -->
 <table>
   <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/why-valet-is-my-preferred-local-stack-for-wordpress-and-astro/">Why Valet Is My Preferred Local Stack for WordPress and Astro</a></b><br><sub>21 Jun 2026</sub><br><br>Why a lightweight Valet setup works well for WordPress and Astro projects when you want fast startup times and less container overhead</td>
     <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/astro-content-collections-for-migrating-wordpress-content/">Astro Content Collections for Migrating WordPress Content</a></b><br><sub>4 Jun 2026</sub><br><br>How to use Astro Content Collections as a structured landing zone for WordPress content migrations, with schemas, import scripts, and a safer path from CMS to static front end</td>
-    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/building-better-prompts-for-claude-article-drafts/">Building Better Prompts for Claude Article Drafts</a></b><br><sub>4 Jun 2026</sub><br><br>A practical guide to writing better prompts for Claude when you want usable article drafts, cleaner outlines, and less editing after the first pass</td>
   </tr>
   <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/building-better-prompts-for-claude-article-drafts/">Building Better Prompts for Claude Article Drafts</a></b><br><sub>4 Jun 2026</sub><br><br>A practical guide to writing better prompts for Claude when you want usable article drafts, cleaner outlines, and less editing after the first pass</td>
     <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/using-opencode-for-ai-assisted-development/">Using Opencode as a Harness for AI-Assisted Development</a></b><br><sub>4 Jun 2026</sub><br><br>A practical look at opencode as the harness around model choice, prompt routing, repo context, and CLI workflow for planning, refactoring, debugging, and iterating faster</td>
-    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/astro-js-with-react-components-partial-hydration-strategies/">Astro.js with React Components: Partial Hydration Strategies</a></b><br><sub>29 May 2026</sub><br><br>Integrating React components into Astro sites using partial hydration directives to control when and how JavaScript loads on the client</td>
   </tr>
 </table>
 <!-- BLOG-POST-LIST:END -->

@@ -7,6 +7,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-profile-readme
+  cancel-in-progress: true
+
 jobs:
   update-readme-with-blog:
     name: Update README with latest fatpasty.com posts
@@ -25,16 +29,30 @@ jobs:
           const fs = require('fs');
           const Parser = require('rss-parser');
           (async () => {
-            const parser = new Parser();
-            const feed = await parser.parseURL('https://fatpasty.com/rss.xml');
+            const parser = new Parser({
+              headers: {
+                'Cache-Control': 'no-cache',
+                'User-Agent': 'MeonValleyWeb-profile-readme/1.0'
+              }
+            });
+            // Add a query string and no-cache headers so an edge cache cannot leave
+            // the profile behind the feed published by fatpasty.com.
+            const feedUrl = `https://fatpasty.com/rss.xml?profile_readme=${Date.now()}`;
+            const feed = await parser.parseURL(feedUrl);
             const posts = feed.items
               .slice()
               .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
               .slice(0, 4);
+            if (posts.length === 0) throw new Error('fatpasty.com RSS feed returned no posts');
+            const escapeHtml = value => String(value || '')
+              .replaceAll('&', '&amp;')
+              .replaceAll('<', '&lt;')
+              .replaceAll('>', '&gt;')
+              .replaceAll('"', '&quot;');
             const cell = p => {
               const date = new Date(p.pubDate).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
               const desc = (p.contentSnippet || p.content || '').trim();
-              return `<td valign="top" width="50%"><b><a href="${p.link}">${p.title}</a></b><br><sub>${date}</sub><br><br>${desc}</td>`;
+              return `<td valign="top" width="50%"><b><a href="${escapeHtml(p.link)}">${escapeHtml(p.title)}</a></b><br><sub>${date}</sub><br><br>${escapeHtml(desc)}</td>`;
             };
             const rows = [];
             for (let i = 0; i < posts.length; i += 2) {
@@ -42,11 +60,16 @@ jobs:
             }
             const grid = `<table>\n${rows.join('\n')}\n</table>`;
             const readme = fs.readFileSync('README.md', 'utf8');
+            if (!readme.includes('<!-- BLOG-POST-LIST:START -->') || !readme.includes('<!-- BLOG-POST-LIST:END -->')) {
+              throw new Error('README blog post markers are missing');
+            }
             const out = readme.replace(
               /<!-- BLOG-POST-LIST:START -->[\s\S]*?<!-- BLOG-POST-LIST:END -->/,
               `<!-- BLOG-POST-LIST:START -->\n${grid}\n<!-- BLOG-POST-LIST:END -->`
             );
             fs.writeFileSync('README.md', out);
+            console.log(`Latest feed item: ${posts[0].title} (${posts[0].pubDate})`);
+            console.log(out === readme ? 'README is already current' : 'README blog posts updated');
           })();
           EOF
 

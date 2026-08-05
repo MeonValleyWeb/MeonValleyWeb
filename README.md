@@ -1,26 +1,40 @@
-# MeonValleyWeb
+# Hi, I'm Andrew 👋
 
-**Freelance web developer** · 50 years of shipping code · Meon Valley, UK
+**Web developer in the Meon Valley, UK — still shipping after 50 years and still curious.**
 
-[fatpasty.com](https://fatpasty.com) · [Twitter](https://twitter.com/meonvalleyweb) · [LinkedIn](https://linkedin.com/in/meonvalleyweb) · [Instagram](https://instagram.com/meonvalleyweb)
+I build fast, maintainable websites, developer tools and content platforms. Most of my work sits where **Astro**, **TypeScript** and modern infrastructure meet **WordPress** and the open web.
 
----
+[![Website](https://img.shields.io/badge/fatpasty.com-111827?style=flat&logo=astro&logoColor=white)](https://fatpasty.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/meonvalleyweb)
+[![GitHub followers](https://img.shields.io/github/followers/MeonValleyWeb?style=flat&logo=github&label=Followers)](https://github.com/MeonValleyWeb?tab=followers)
 
-### Stack
+## What I work with
 
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
----
+- Content-first sites and web applications with Astro
+- WordPress and Bedrock builds, plugins and headless migrations
+- TypeScript tooling, APIs, automation and terminal interfaces
+- Performance, accessibility, technical SEO and dependable delivery
 
-### Latest writing
+## Selected projects
+
+| Project | What it does | Stack |
+| --- | --- | --- |
+| [StackPilot](https://github.com/MeonValleyWeb/StackPilot) | A modern terminal UI for managing remote stacks | TypeScript |
+| [Headless Login Guard](https://github.com/MeonValleyWeb/headless-login-guard) | Protects backend access in headless WordPress setups | PHP / WordPress |
+| [WordPress Login Tracker](https://github.com/MeonValleyWeb/wordpress-login-tracker) | Audits and reports WordPress login activity | PHP / WordPress |
+| [Package Age Guard](https://github.com/MeonValleyWeb/package-age-guard) | Blocks newly published npm packages to reduce supply-chain risk | JavaScript |
+
+## Latest writing
 
 <!-- BLOG-POST-LIST:START -->
 <table>
@@ -35,17 +49,16 @@
 </table>
 <!-- BLOG-POST-LIST:END -->
 
-<sub>Synced from <a href="https://fatpasty.com">fatpasty.com</a> · updated every 12h</sub>
+<sub>Read from <a href="https://fatpasty.com/rss.xml">fatpasty.com's RSS feed</a> · checked every 12 hours</sub>
 
----
+## Contributions
 
-### GitHub
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MeonValleyWeb/MeonValleyWeb/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MeonValleyWeb/MeonValleyWeb/output/github-contribution-grid-snake.svg">
+  <img alt="Andrew's GitHub contribution graph" src="https://raw.githubusercontent.com/MeonValleyWeb/MeonValleyWeb/output/github-contribution-grid-snake.svg">
+</picture>
 
-![Stats](https://github-readme-stats.vercel.app/api?username=MeonValleyWeb&show_icons=true&hide_border=true&theme=transparent&icon_color=0969DA&title_color=0969DA)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MeonValleyWeb&layout=compact&hide_border=true&theme=transparent&title_color=0969DA)
+## Let's build something useful
 
----
-
-### Hire
-
-Need a site that loads fast, ranks well, and ships on time? [Get in touch →](https://fatpasty.com)
+Need a fast site, a WordPress-to-Astro migration, or help turning an awkward workflow into dependable tooling? [Get in touch at fatpasty.com →](https://fatpasty.com/contact)

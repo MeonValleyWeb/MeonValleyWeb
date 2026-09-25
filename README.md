@@ -61,4 +61,4 @@ I build fast, maintainable websites, developer tools and content platforms. Most
 
 ## Let's build something useful
 
-Need a fast site, a WordPress-to-Astro migration, or help turning an awkward workflow into dependable tooling? [Get in touch at fatpasty.com →](https://fatpasty.com/contact)
+Need a fast site, a WordPress-to-Astro migration, or help turning an awkward workflow into dependable tooling? [Get in touch at Meon Valley Web →](https://meonvalleyweb.com)

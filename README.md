@@ -39,12 +39,12 @@ I build fast, maintainable websites, developer tools and content platforms. Most
 <!-- BLOG-POST-LIST:START -->
 <table>
   <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/the-day-the-disk-filled-again/">Building a Self-Hosted AI Development Platform — Part 17: The Day the Disk Filled Again</a></b><br><sub>7 Nov 2026</sub><br><br>Part 17 of the Forge series: a runaway build loop filled the Docker host, took out identity, Git and CI together, and showed what a cleanup that only runs on success really costs</td>
     <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/hardware-you-only-think-about-once/">Building a Self-Hosted AI Development Platform — Part 16: Hardware You Only Think About Once</a></b><br><sub>7 Oct 2026</sub><br><br>Part 16 of the Forge series: the firmware settings, kernel workarounds and disk checks that live below every Compose file — including a BIOS bug that flooded the logs once per second</td>
-    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/running-it-calmly-logs-update-watching-morning-operations/">Building a Self-Hosted AI Development Platform — Part 13: Running It Calmly</a></b><br><sub>7 Oct 2026</sub><br><br>Part 13 of the Forge series: searchable container logs with Loki and Alloy, a report-only update watcher, one morning digest instead of twenty dashboards, and the capability that a crash loop taught me about</td>
   </tr>
   <tr>
+    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/running-it-calmly-logs-update-watching-morning-operations/">Building a Self-Hosted AI Development Platform — Part 13: Running It Calmly</a></b><br><sub>7 Oct 2026</sub><br><br>Part 13 of the Forge series: searchable container logs with Loki and Alloy, a report-only update watcher, one morning digest instead of twenty dashboards, and the capability that a crash loop taught me about</td>
     <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/the-failover-that-failed-network-bonding-rollback/">Building a Self-Hosted AI Development Platform — Part 15: The Failover That Failed</a></b><br><sub>7 Oct 2026</sub><br><br>Part 15 of the Forge series: a second network card, an active-backup bond, a test that cut the house off from DNS, a byte-for-byte rollback — and a problem that is still open</td>
-    <td valign="top" width="50%"><b><a href="https://fatpasty.com/blog/when-the-platform-leaves-the-rack-lan-only-services/">Building a Self-Hosted AI Development Platform — Part 14: When the Platform Leaves the Rack</a></b><br><sub>7 Oct 2026</sub><br><br>Part 14 of the Forge series: the services that deliberately get no public hostname — DNS filtering, home automation, Mac backups over Samba, and a bridge into a decade-old Sonos system</td>
   </tr>
 </table>
 <!-- BLOG-POST-LIST:END -->
